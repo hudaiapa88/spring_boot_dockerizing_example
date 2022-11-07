@@ -8,7 +8,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "user")
 @Data
-@SuperBuilder
 @TypeAlias("teacher")
 public class Teacher extends User {
 

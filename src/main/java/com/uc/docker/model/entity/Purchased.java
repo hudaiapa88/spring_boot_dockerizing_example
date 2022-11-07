@@ -7,7 +7,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 @Data
-@SuperBuilder
 public class Purchased extends BaseEntity{
 
     private Long studentId;

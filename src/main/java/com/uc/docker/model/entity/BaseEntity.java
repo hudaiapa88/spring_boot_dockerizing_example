@@ -7,7 +7,6 @@ import org.springframework.data.annotation.Transient;
 
 
 @Data
-@SuperBuilder
 public class BaseEntity {
 
     @Transient

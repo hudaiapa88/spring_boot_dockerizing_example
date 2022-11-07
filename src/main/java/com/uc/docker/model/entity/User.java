@@ -6,7 +6,6 @@ import lombok.experimental.SuperBuilder;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
-@SuperBuilder
 @Document(collection = "user")
 public class User extends BaseEntity{
     private String firstname;
