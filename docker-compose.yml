@@ -1,0 +1,20 @@
+services:
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    environment:
+      MONGO_INITDB_DATABASE: course
+    ports:
+      - '27017:27017'
+  express:
+    container_name: express
+    image: mongo-express
+    ports:
+      - '9001:8081'
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongodb
+      - ME_CONFIG_MONGODB_PORT=27017
+      - ME_CONFIG_MONGODB_ENABLE_ADMIN=true
+    depends_on:
+      - mongodb
+version: '3'
